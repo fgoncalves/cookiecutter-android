@@ -1,0 +1,10 @@
+{
+  "app_name": "MyApplication",
+  "package_name": "com.example.{{ cookiecutter.app_name | to_camel | lower }}",
+  "add_network_stack": ["y", "n"],
+  "add_network_logging": ["y", "n"],
+  "logging_api": ["timber", "android"],
+
+  "_extensions": ["jinja2_strcase.StrcaseExtension"],
+  "_copy_without_render": [".gradle", "gradle/", "*gradlew", "*gradlew.bat"]
+}
